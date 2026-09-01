@@ -42,9 +42,6 @@ export default function Header() {
             ))}
           </ul>
 
-          <div className={styles.navFooter}>
-            <LanguageSwitcher />
-          </div>
         </nav>
 
         <div className={styles.icons}>
@@ -55,6 +52,9 @@ export default function Header() {
             <img src={cartIcon} alt="" aria-hidden="true" />
           </button>
         </div>
+          <div className={styles.navFooter}>
+            <LanguageSwitcher />
+          </div>
       </div>
     </header>
   );

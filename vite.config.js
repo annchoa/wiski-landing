@@ -5,6 +5,10 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // Relative asset paths, so the built site works both at a domain root and
+  // at a GitHub Pages project subpath (https://<user>.github.io/wiski-landing/)
+  // without hard-coding the repo name here.
+  base: "./",
   resolve: {
     alias: {
       // `~` always means "src/", so an import never has to know how many

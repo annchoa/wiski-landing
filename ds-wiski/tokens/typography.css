@@ -1,0 +1,27 @@
+/* Type system. Three families, each with one job — from wiski-home.fig. */
+:root{
+  --font-display:"Braah One", "Assistant", system-ui, sans-serif; /* @kind font */
+  --font-core:"Assistant", system-ui, -apple-system, sans-serif; /* @kind font */
+  --font-eyebrow:"B612", "Assistant", monospace; /* @kind font */
+  --font-body:var(--font-core); /* @kind font */
+
+  --weight-regular-brand:400; /* @kind font */
+  --weight-semibold-brand:600; /* @kind font */
+  --weight-bold-brand:700; /* @kind font */
+
+  /* Sizes as drawn — do not round these. */
+  --size-hero:20px;      /* @kind font */
+  --size-section:20px;   /* @kind font */
+  --size-subhead:20px;   /* @kind font */
+  --size-cta:14px;       /* @kind font */
+  --size-eyebrow:13px;   /* @kind font */
+  --size-badge:12px;     /* @kind font */
+  --size-body:16px;      /* @kind font */
+  --size-caption:15px;   /* @kind font */
+  --size-legal:11px;     /* @kind font */
+
+  --leading-tight:100%;  /* @kind other */
+  --leading-body:1.4;    /* @kind other */
+  --tracking-eyebrow:.02em; /* @kind other */
+  --tracking-heading:-0.02em; /* @kind other */
+}

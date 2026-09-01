@@ -1,0 +1,26 @@
+/* Radii, spacing and elevation as drawn in wiski-home.fig. */
+:root{
+  --radius-button:5px;   /* @kind radius */
+  --radius-card:8px;     /* @kind radius */
+  --radius-badge:23px;   /* @kind radius */
+  --radius-photo:32px;   /* @kind radius */
+  --radius-round:9999px; /* @kind radius */
+
+  --band-height:120px;   /* @kind spacing */
+  --page-width:1440px;   /* @kind spacing */
+  --content-width:1200px;/* @kind spacing */
+  --gutter:169px;        /* @kind spacing */
+
+  --space-1:4px;  /* @kind spacing */
+  --space-2:8px;  /* @kind spacing */
+  --space-3:12px; /* @kind spacing */
+  --space-4:16px; /* @kind spacing */
+  --space-6:24px; /* @kind spacing */
+  --space-12:48px;/* @kind spacing */
+  --space-16:64px;/* @kind spacing */
+
+  --border-hairline:1px solid var(--border-card); /* @kind other */
+  --ring-secondary:inset 0 0 0 2px var(--action-secondary); /* @kind shadow */
+}
+a{color:var(--action-secondary);text-decoration:none}
+a:hover{color:var(--action-primary);text-decoration:underline}

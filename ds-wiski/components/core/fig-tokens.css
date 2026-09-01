@@ -1,0 +1,98 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --background-brand-default: var(--brand-800); /* @kind color */
+  --background-brand-tertiary: var(--brand-100); /* @kind color */
+  --background-default-default-hover: var(--gray-100); /* @kind color */
+  --background-default-default: var(--white-1000); /* @kind color */
+  --body-font-family: var(--family-sans);
+  --body-font-weight-regular: var(--weight-regular);
+  --body-font-weight-strong: var(--weight-semibold);
+  --body-size-medium: var(--scale-03);
+  --body-size-small: var(--scale-02);
+  --border-default-default: var(--gray-300); /* @kind color */
+  --border-neutral-default: var(--slate-900); /* @kind color */
+  --border-width: 1; /* @kind spacing */
+  --brand-100: rgb(245,245,245); /* @kind color */
+  --brand-600: rgb(68,68,68); /* @kind color */
+  --brand-800: rgb(44,44,44); /* @kind color */
+  --brand-900: rgb(30,30,30); /* @kind color */
+  --device-width: 1200; /* @kind other */
+  --family-sans: "Assistant"; /* @kind font */
+  --gray-100: rgb(245,245,245); /* @kind color */
+  --gray-300: rgb(217,217,217); /* @kind color */
+  --gray-400: rgb(179,179,179); /* @kind color */
+  --gray-500: rgb(117,117,117); /* @kind color */
+  --gray-600: rgb(68,68,68); /* @kind color */
+  --gray-700: rgb(56,56,56); /* @kind color */
+  --gray-900: rgb(30,30,30); /* @kind color */
+  --heading-font-family: var(--family-sans);
+  --heading-font-weight: var(--weight-semibold);
+  --heading-size-base: var(--scale-05);
+  --icon-brand-default: var(--brand-800); /* @kind color */
+  --icon-default-default: var(--gray-900); /* @kind color */
+  --icon-large: 40; /* @kind spacing */
+  --icon-medium: 32; /* @kind spacing */
+  --icon-small: 24; /* @kind spacing */
+  --radius-100: 4; /* @kind radius */
+  --radius-200: 8; /* @kind radius */
+  --radius-full: 9999; /* @kind radius */
+  --scale-02: 14; /* @kind font */
+  --scale-03: 16; /* @kind font */
+  --scale-04: 20; /* @kind font */
+  --scale-05: 24; /* @kind font */
+  --slate-1000: rgb(36,36,36); /* @kind color */
+  --slate-100: rgb(243,243,243); /* @kind color */
+  --slate-200: rgb(227,227,227); /* @kind color */
+  --slate-900: rgb(48,48,48); /* @kind color */
+  --space-100: 4;
+  --space-1200: 48;
+  --space-1600: 64;
+  --space-200: 8;
+  --space-300: 12;
+  --space-400: 16;
+  --space-600: 24;
+  --stroke-border: 1; /* @kind spacing */
+  --subheading-font-family: var(--family-sans);
+  --subheading-font-weight: var(--weight-regular);
+  --subheading-size-medium: var(--scale-04);
+  --text-brand-on-brand-secondary: var(--brand-900); /* @kind color */
+  --text-brand-on-brand: var(--brand-100); /* @kind color */
+  --text-default-default: var(--gray-900); /* @kind color */
+  --text-default-secondary: var(--gray-500); /* @kind color */
+  --text-default-tertiary: var(--gray-400); /* @kind color */
+  --text-neutral-on-neutral: var(--slate-100); /* @kind color */
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --white-1000: rgb(255,255,255); /* @kind color */
+  --white-400: rgba(255,255,255,0.4); /* @kind color */
+  --white-500: rgba(255,255,255,0.7); /* @kind color */
+}
+
+:root[data-theme="dark"], .dark {
+  --background-brand-default: var(--brand-100); /* @kind color */
+  --background-brand-tertiary: var(--brand-600); /* @kind color */
+  --background-default-default-hover: var(--gray-700); /* @kind color */
+  --background-default-default: var(--gray-900); /* @kind color */
+  --border-default-default: var(--gray-600); /* @kind color */
+  --border-neutral-default: var(--slate-100); /* @kind color */
+  --icon-brand-default: var(--brand-100); /* @kind color */
+  --icon-default-default: var(--white-1000); /* @kind color */
+  --text-brand-on-brand-secondary: var(--brand-100); /* @kind color */
+  --text-brand-on-brand: var(--brand-900); /* @kind color */
+  --text-default-default: var(--white-1000); /* @kind color */
+  --text-default-secondary: var(--white-500); /* @kind color */
+  --text-default-tertiary: var(--white-400); /* @kind color */
+  --text-neutral-on-neutral: var(--slate-1000); /* @kind color */
+}
+
+:root[data-mode="mobile"] {
+  --border-width: 1; /* @kind spacing */
+  --device-width: 375; /* @kind other */
+}
+
+:root[data-mode="tablet"] {
+  --border-width: 1; /* @kind spacing */
+  --device-width: 768; /* @kind other */
+}

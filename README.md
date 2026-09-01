@@ -63,3 +63,9 @@ Mobile-first. Every component's CSS follows the same two breakpoints:
 - `640px` — tablet
 - `1024px` — desktop
 
+## What's simplified vs. the Figma source
+
+The `ds-wiski/` design system is a pixel-perfect, desktop-only (1440px)
+recreation with no mobile layout and a few flattened bitmap images (the
+advantages panel, steps strip, FAQ accordion) that aren't real, translatable
+markup.

@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "links": ["Álbumes", "Ruta", "Momento", "Precios", "Cómo funciona", "Ayuda"],
+    "account": "Cuenta",
+    "cart": "Carrito",
+    "menu": "Menú"
+  },
+  "hero": {
+    "eyebrow": "Álbumes impresos para todo el Ecuador",
+    "headline": "Una bestia esa foto,\nimprímela",
+    "cta": "Crear mi albúm"
+  },
+  "products": {
+    "kicker": "Elige tu momento",
+    "subtitle": "Formatos pensados para lo que quieras recordar o regalar",
+    "cta": "Empecemos",
+    "ctaAdded": "Añadido ✓",
+    "items": [
+      {
+        "id": "ruta",
+        "title": "Wiski Ruta",
+        "price": "$39",
+        "body": "Tapa dura 21x30 cm — de la maleta al librero.",
+        "badge": "Más vendido"
+      },
+      {
+        "id": "momento",
+        "title": "Wiski Momento",
+        "price": "$29",
+        "body": "Formato mini de bolsillo 15x15 cm.",
+        "badge": "Envíalo como regalo"
+      }
+    ]
+  },
+  "advantages": {
+    "heading": "Descubre las ventajas de usar Wiski",
+    "items": [
+      {
+        "title": "Listo en minutos",
+        "body": "Arma tu álbum en menos de 10 minutos con nuestro editor guiado."
+      },
+      {
+        "title": "Envíos a todo el Ecuador",
+        "body": "Tu álbum llega a la puerta de tu casa, esté donde esté."
+      },
+      {
+        "title": "Papel y acabados de calidad",
+        "body": "Tapa dura, páginas gruesas y colores que no se destiñen."
+      },
+      {
+        "title": "Edítalo cuando quieras",
+        "body": "Guarda tu proyecto y sigue personalizándolo cuando tengas tiempo."
+      }
+    ]
+  },
+  "steps": {
+    "items": [
+      {
+        "title": "1. Elige tu plantilla",
+        "body": "Escoge el estilo que más se parezca a tu viaje. Todo se personaliza después en el editor."
+      },
+      {
+        "title": "2. Sube tus fotos",
+        "body": "Las organizamos automáticamente para ti, o arma el orden tú mismo si prefieres el control total."
+      },
+      {
+        "title": "3. Personaliza tu álbum",
+        "body": "Cambia textos, colores y portada hasta que se sienta realmente tuyo."
+      },
+      {
+        "title": "4. Espéralo en casa",
+        "body": "Recíbelo en la puerta de tu casa entre 5 y 10 días hábiles."
+      }
+    ]
+  },
+  "reviews": {
+    "heading": "Lo que dicen quienes ya imprimieron",
+    "items": [
+      {
+        "name": "María José P.",
+        "date": "julio 2026",
+        "title": "Quedó igual a las fotos del viaje",
+        "body": "Pedí el Wiski Ruta para el viaje a Galápagos. La calidad del papel es una locura y llegó en 6 días."
+      },
+      {
+        "name": "Andrés T.",
+        "date": "junio 2026",
+        "title": "El regalo perfecto",
+        "body": "Le hice un Wiski Momento a mi mamá por su cumpleaños. Personalizarlo fue súper fácil."
+      },
+      {
+        "name": "Camila R.",
+        "date": "mayo 2026",
+        "title": "Lo voy a repetir",
+        "body": "El editor organiza las fotos solo, pero igual pude cambiar el orden. Excelente experiencia."
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "¿Cómo hago mi pedido?",
+        "answer": "Elige una plantilla, sube tus fotos y personaliza tu álbum en el editor. Al terminar, confirmas el pedido y el pago en línea."
+      },
+      {
+        "question": "¿Cuánto tarda en llegar mi pedido?",
+        "answer": "Entre 5 y 10 días hábiles a cualquier parte del Ecuador, dependiendo de tu ciudad."
+      },
+      {
+        "question": "¿Qué tanto puedo personalizar mi álbum?",
+        "answer": "Puedes cambiar textos, colores, portada y el orden de las fotos. El editor guarda tus cambios automáticamente."
+      },
+      {
+        "question": "¿Qué tamaños de álbum tienen?",
+        "answer": "Wiski Ruta viene en 21x30 cm y Wiski Momento en formato mini de 15x15 cm."
+      }
+    ]
+  },
+  "footer": {
+    "legal": [
+      "Política de privacidad",
+      "Política de reembolso",
+      "Términos del servicio",
+      "Política de envío",
+      "Información de contacto",
+      "Preferencias de cookies"
+    ],
+    "copyright": "© {{year}} Wiski Photobook"
+  },
+  "language": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "Inglés"
+  }
+}

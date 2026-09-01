@@ -1,9 +1,17 @@
+import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      // `~` always means "src/", so an import never has to know how many
+      // folders deep the importing file lives (no more `../../assets/...`).
+      "~": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
   server: {
     // 0.0.0.0 so the dev server is reachable from outside the container
     // (Vite binds to localhost only by default, which docker can't publish).

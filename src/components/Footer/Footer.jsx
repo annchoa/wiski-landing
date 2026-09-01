@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import logo from "../../assets/logo-wiski.png";
+import logo from "~/assets/logo-wiski.png";
 import styles from "./Footer.module.css";
 
 export default function Footer() {

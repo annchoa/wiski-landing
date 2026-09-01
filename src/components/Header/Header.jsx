@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher.jsx";
-import logo from "../../assets/logo-wiski-yellow.png";
-import userIcon from "../../assets/icons/user.svg";
-import cartIcon from "../../assets/icons/shopping-cart-simple.svg";
+import LanguageSwitcher from "~/components/LanguageSwitcher/LanguageSwitcher.jsx";
+import logo from "~/assets/logo-wiski-yellow.png";
+import userIcon from "~/assets/icons/user.svg";
+import cartIcon from "~/assets/icons/shopping-cart-simple.svg";
 import styles from "./Header.module.css";
 
 export default function Header() {

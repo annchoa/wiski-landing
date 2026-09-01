@@ -1,8 +1,8 @@
 import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import ProductCard from "./ProductCard.jsx";
-import photoRuta from "../../assets/photos/photo-02.jpg";
-import photoMomento from "../../assets/photos/photo-06.jpg";
+import photoRuta from "~/assets/photos/photo-02.jpg";
+import photoMomento from "~/assets/photos/photo-06.jpg";
 import styles from "./ProductShelf.module.css";
 
 const IMAGE_BY_ID = {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Button from "../ui/Button.jsx";
+import Button from "~/components/ui/Button.jsx";
 import styles from "./ProductCard.module.css";
 
 const BADGE_COLOR_BY_ID = {

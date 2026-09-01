@@ -5,7 +5,7 @@ import styles from "./ProductCard.module.css";
 
 const BADGE_COLOR_BY_ID = {
   ruta: "var(--color-blue)",
-  momento: "var(--color-yellow)",
+  momento: "var(--color-orange)",
 };
 
 export default function ProductCard({ product, image }) {

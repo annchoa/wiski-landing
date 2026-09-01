@@ -1,9 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Button from "~/components/ui/Button.jsx";
-import photo02 from "~/assets/photos/photo-02.jpg";
-import photo04 from "~/assets/photos/photo-04.jpg";
-import photo05 from "~/assets/photos/photo-05.jpg";
-import photo06 from "~/assets/photos/photo-06.jpg";
+import africa from "~/assets/photos/africa.png";
 import styles from "./Hero.module.css";
 
 // The five palette dots under the CTA — a literal statement of the brand
@@ -22,11 +19,8 @@ export default function Hero({ onCtaClick }) {
 
   return (
     <section className={styles.hero} id="top">
-      <div className={styles.collage}>
-        <img src={photo04} alt="" className={`${styles.photo} ${styles.photoA}`} />
-        <img src={photo02} alt="" className={`${styles.photo} ${styles.photoB}`} />
-        <img src={photo05} alt="" className={`${styles.photo} ${styles.photoC}`} />
-        <img src={photo06} alt="" className={`${styles.photo} ${styles.photoD}`} />
+      <div >
+        <img src={africa} alt="" className={`${styles.photo} ${styles.photoA}`} />
       </div>
 
       <div className={styles.content}>

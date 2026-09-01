@@ -11,8 +11,8 @@
 
 .badge {
   position: absolute;
-  top: var(--space-4);
-  left: var(--space-4);
+  top: var(--space-8);
+  left: var(--space-8);
   z-index: 1;
   height: 20px;
   border-radius: var(--radius-badge);

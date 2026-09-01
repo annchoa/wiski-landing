@@ -12,14 +12,14 @@
 
 .kicker {
   font-weight: var(--weight-semibold);
-  font-size: var(--size-badge);
+  font-size: var(--size-subhead);
   color: var(--color-white);
 }
 
 .subtitle {
   margin-top: var(--space-2);
   font-weight: var(--weight-semibold);
-  font-size: var(--size-badge);
+  font-size: var(--size-caption);
   color: var(--color-white);
 }
 

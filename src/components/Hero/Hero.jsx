@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import Button from "../ui/Button.jsx";
-import photo02 from "../../assets/photos/photo-02.jpg";
-import photo04 from "../../assets/photos/photo-04.jpg";
-import photo05 from "../../assets/photos/photo-05.jpg";
-import photo06 from "../../assets/photos/photo-06.jpg";
+import Button from "~/components/ui/Button.jsx";
+import photo02 from "~/assets/photos/photo-02.jpg";
+import photo04 from "~/assets/photos/photo-04.jpg";
+import photo05 from "~/assets/photos/photo-05.jpg";
+import photo06 from "~/assets/photos/photo-06.jpg";
 import styles from "./Hero.module.css";
 
 // The five palette dots under the CTA — a literal statement of the brand

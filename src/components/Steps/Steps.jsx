@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import sparkleLg from "../../assets/icons/star-four-lg.svg";
-import sparkleMd from "../../assets/icons/star-four-md.svg";
-import sparkleSm from "../../assets/icons/star-four-sm.svg";
+import sparkleLg from "~/assets/icons/star-four-lg.svg";
+import sparkleMd from "~/assets/icons/star-four-md.svg";
+import sparkleSm from "~/assets/icons/star-four-sm.svg";
 import styles from "./Steps.module.css";
 
 export default function Steps() {

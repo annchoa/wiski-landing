@@ -1,0 +1,115 @@
+/*
+ * Design tokens — the single place to change a color, a font size or a
+ * spacing value across the whole site. Every component reads these
+ * variables instead of hard-coding a value, so re-branding or tweaking
+ * the scale never means hunting through component files.
+ *
+ * Values are transcribed from the Wiski design system (ds-wiski/tokens).
+ */
+:root {
+  /* ---------- Color: brand ramp ---------- */
+  --color-blue: #2546fd;
+  --color-blue-band: #4460fe;
+  --color-blue-translucent: rgba(37, 70, 253, 0.86);
+  --color-orange: #fc552a;
+  --color-yellow: #fdc41e;
+  --color-cream: #f8efe0;
+  --color-ink: #1e1e1b;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-300: #d9d9d9;
+  --color-gray-warm: #b6b0af;
+  --color-surface-tint: #f5f5f5;
+
+  /* ---------- Color: semantic aliases ----------
+     Components reference these, never the raw brand ramp above, so the
+     brand palette can change without touching a single component. */
+  --color-surface-page: var(--color-white);
+  --color-surface-band: var(--color-blue-translucent);
+  --color-surface-band-alt: var(--color-blue-band);
+  --color-surface-card: var(--color-white);
+  --color-surface-panel: var(--color-surface-tint);
+  --color-border: var(--color-gray-300);
+  --color-text: var(--color-black);
+  --color-text-muted: #4c4c4c;
+  --color-text-on-band: var(--color-white);
+  --color-text-on-cta: var(--color-cream);
+  --color-action-primary: var(--color-orange);
+  --color-action-primary-hover: #e0451c;
+  --color-action-secondary: var(--color-blue);
+  --color-action-secondary-hover: rgba(37, 70, 253, 0.08);
+  --color-accent: var(--color-yellow);
+  --color-focus-ring: var(--color-blue);
+
+  /* ---------- Typography ---------- */
+  --font-display: "Braah One", "Assistant", system-ui, sans-serif;
+  --font-body: "Assistant", system-ui, -apple-system, sans-serif;
+  --font-eyebrow: "B612", "Assistant", monospace;
+
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-tight: 1;
+  --leading-body: 1.4;
+  --tracking-eyebrow: 0.02em;
+  --tracking-heading: -0.02em;
+
+  /* Fluid-ish type scale: comfortable on mobile, matches the source
+     artwork at desktop widths. Adjusted per-breakpoint below. */
+  --size-hero: 32px;
+  --size-section: 24px;
+  --size-subhead: 16px;
+  --size-cta: 14px;
+  --size-eyebrow: 12px;
+  --size-badge: 12px;
+  --size-body: 16px;
+  --size-caption: 15px;
+  --size-legal: 12px;
+
+  /* ---------- Radii ---------- */
+  --radius-button: 5px;
+  --radius-card: 8px;
+  --radius-badge: 23px;
+  --radius-photo: 24px;
+  --radius-round: 9999px;
+
+  /* ---------- Spacing scale ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* ---------- Layout ---------- */
+  --content-max-width: 1200px;
+  --content-padding-inline: var(--space-5);
+  --border-hairline: 1px solid var(--color-border);
+  --shadow-ring-secondary: inset 0 0 0 2px var(--color-action-secondary);
+
+  /* ---------- Motion ---------- */
+  --transition-fast: 150ms ease-out;
+  --transition-base: 200ms ease-out;
+}
+
+/* Desktop bump: the source artwork's exact sizes kick in from tablet up. */
+@media (min-width: 768px) {
+  :root {
+    --size-hero: 40px;
+    --size-section: 28px;
+    --content-padding-inline: var(--space-10);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --size-hero: 44px;
+    --content-padding-inline: var(--space-16);
+  }
+}

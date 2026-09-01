@@ -1,0 +1,132 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-8) var(--content-padding-inline);
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+/* Mobile: a simple 2x2 photo grid, no overlap — keeps the collage legible
+   at small sizes instead of shrinking pixel-perfect desktop tiles. */
+.collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--space-2);
+  aspect-ratio: 1 / 1;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-photo);
+}
+
+.photoA {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.photoB {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.photoC {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.photoD {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-round);
+  background: var(--color-gray-warm);
+  font-family: var(--font-eyebrow);
+  font-size: var(--size-eyebrow);
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.headline {
+  margin-top: var(--space-4);
+  font-family: var(--font-display);
+  font-weight: var(--weight-regular);
+  font-size: var(--size-hero);
+  line-height: var(--leading-tight);
+  color: var(--color-black);
+}
+
+.headline > span {
+  display: inline;
+}
+
+.headline button {
+  margin-top: var(--space-6);
+}
+
+.content > button {
+  margin-top: var(--space-6);
+}
+
+.dots {
+  margin-top: var(--space-8);
+  display: flex;
+  gap: var(--space-3);
+}
+
+.dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    padding-block: var(--space-12);
+  }
+
+  .dot {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-16);
+    min-height: 560px;
+  }
+
+  .collage {
+    flex: 1.1;
+    aspect-ratio: 4 / 3;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .dot {
+    width: 58px;
+    height: 58px;
+  }
+}

@@ -1,0 +1,14 @@
+services:
+  app:
+    image: wiski-landing:dev
+    container_name: wiski-landing
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3003:3003"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true

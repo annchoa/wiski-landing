@@ -1,8 +1,0 @@
-.row {
-  display: flex;
-  gap: var(--space-1);
-}
-
-.star {
-  color: var(--color-yellow);
-}

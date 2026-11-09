@@ -1,136 +1,108 @@
 {
   "nav": {
-    "links": ["Albums", "Route", "Moment", "Pricing", "How it works", "Help"],
-    "account": "Account",
-    "cart": "Cart",
-    "menu": "Menu"
+    "products": "Products",
+    "howItWorks": "How it works",
+    "testimonials": "Testimonials",
+    "faq": "FAQ"
+  },
+  "header": {
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "cart": "Cart"
   },
   "hero": {
-    "eyebrow": "Printed albums delivered across Ecuador",
-    "headline": "That photo's a beast,\nprint it",
-    "cta": "Create my album"
+    "logoAlt": "Wiski Photobook",
+    "headline": "Your photos deserve more than a full gallery",
+    "cta": "Print your photobook"
+  },
+  "showcase": {
+    "title": "Your photos, on paper",
+    "pause": "Pause",
+    "resume": "Resume"
+  },
+  "places": {
+    "miami": "Miami",
+    "newYork": "New York",
+    "orlando": "Orlando",
+    "peru": "Peru",
+    "rome": "Rome"
+  },
+  "photos": {
+    "front": "Front cover of the {{place}} photobook",
+    "back": "Back cover of the {{place}} photobook",
+    "open": "Open pages of the {{place}} photobook",
+    "openView": "Open pages of the {{place}} photobook, view {{view}}"
   },
   "products": {
-    "kicker": "Choose your moment",
-    "subtitle": "Formats made for what you want to remember or gift",
+    "title": "Choose your photobook",
+    "subtitle": "Formats made for what you want to remember or give",
     "cta": "Let's start",
-    "ctaAdded": "Added ✓",
-    "items": [
-      {
-        "id": "ruta",
-        "title": "Wiski Ruta",
-        "price": "$39",
-        "body": "Hardcover 21x30 cm — from your suitcase to your bookshelf.",
-        "badge": "Best seller"
-      },
-      {
-        "id": "momento",
-        "title": "Wiski Momento",
-        "price": "$29",
-        "body": "Mini pocket format 15x15 cm.",
-        "badge": "Send it as a gift"
-      }
-    ]
+    "ruta": {
+      "badge": "Best seller",
+      "description": "From the suitcase to the shelf: your trips printed in a hardcover photobook.",
+      "format": "Hardcover · 21x30 cm"
+    },
+    "momento": {
+      "badge": "A gift to give",
+      "description": "A date that matters, in a gift that does not stay on the phone.",
+      "format": "Square format · 20x20 cm"
+    }
   },
-  "advantages": {
-    "heading": "Discover the advantages of using Wiski",
-    "items": [
-      {
-        "title": "Ready in minutes",
-        "body": "Build your album in under 10 minutes with our guided editor."
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "From your phone to your home in five steps",
+    "steps": {
+      "choose": {
+        "title": "Choose your photobook",
+        "body": "Pick the photobook that is closest to what you want to remember."
       },
-      {
-        "title": "Shipping across Ecuador",
-        "body": "Your album arrives at your door, wherever you are."
+      "upload": {
+        "title": "Upload your photos",
+        "body": "Select your photos and choose the order you want to see them in."
       },
-      {
-        "title": "Quality paper and finishes",
-        "body": "Hardcover, thick pages, and colors that don't fade."
+      "personalize": {
+        "title": "Personalize it",
+        "body": "Adjust the pages, the front cover and the back cover in the editor."
       },
-      {
-        "title": "Edit it whenever you want",
-        "body": "Save your project and keep customizing it whenever you have time."
+      "pay": {
+        "title": "Pay",
+        "body": "Review your order and confirm the payment."
+      },
+      "wait": {
+        "title": "Wait for it at home",
+        "body": "We print it and bring it to any city in Ecuador."
       }
-    ]
+    }
   },
-  "steps": {
-    "items": [
-      {
-        "title": "1. Choose your template",
-        "body": "Pick the style that matches your trip. Everything can be customized later in the editor."
-      },
-      {
-        "title": "2. Upload your photos",
-        "body": "We organize them automatically for you, or arrange the order yourself for full control."
-      },
-      {
-        "title": "3. Customize your album",
-        "body": "Change text, colors, and the cover until it feels truly yours."
-      },
-      {
-        "title": "4. Wait for it at home",
-        "body": "Get it at your door in 5 to 10 business days."
-      }
-    ]
-  },
-  "reviews": {
-    "heading": "What people who already printed say",
-    "items": [
-      {
-        "name": "María José P.",
-        "date": "July 2026",
-        "title": "Just like the trip photos",
-        "body": "I ordered the Wiski Ruta for the Galápagos trip. The paper quality is amazing and it arrived in 6 days."
-      },
-      {
-        "name": "Andrés T.",
-        "date": "June 2026",
-        "title": "The perfect gift",
-        "body": "I made a Wiski Momento for my mom's birthday. Customizing it was super easy."
-      },
-      {
-        "name": "Camila R.",
-        "date": "May 2026",
-        "title": "I'll do it again",
-        "body": "The editor organizes the photos on its own, but I could still change the order. Great experience."
-      }
-    ]
+  "testimonials": {
+    "title": "What people who already printed say",
+    "rating": "{{rating}} out of 5 stars",
+    "items": {
+      "camila": "I made the photobook of our trip to Peru and now it lives in the living room.",
+      "andres": "All of Rome in one book. I flip through it every time I want to go back.",
+      "daniela": "Making it in the editor took me less than ten minutes. The Orlando photos came out better than I expected."
+    }
   },
   "faq": {
-    "heading": "Frequently asked questions",
-    "items": [
-      {
+    "title": "Frequently asked questions",
+    "items": {
+      "order": {
         "question": "How do I place my order?",
-        "answer": "Pick a template, upload your photos, and customize your album in the editor. When you're done, confirm your order and pay online."
-      },
-      {
-        "question": "How long does my order take to arrive?",
-        "answer": "Between 5 and 10 business days anywhere in Ecuador, depending on your city."
-      },
-      {
-        "question": "How much can I customize my album?",
-        "answer": "You can change text, colors, the cover, and the photo order. The editor saves your changes automatically."
-      },
-      {
-        "question": "What album sizes do you have?",
-        "answer": "Wiski Ruta comes in 21x30 cm and Wiski Momento in a 15x15 cm mini format."
+        "answer": "Choose your photobook, upload your photos and personalize it in the editor. Confirm the payment and we print it and bring it to your door."
       }
-    ]
+    }
+  },
+  "finalCta": {
+    "headline": "Your photos are ready. Print them.",
+    "cta": "Print your photobook"
   },
   "footer": {
-    "legal": [
-      "Privacy policy",
-      "Refund policy",
-      "Terms of service",
-      "Shipping policy",
-      "Contact information",
-      "Cookie preferences"
-    ],
-    "copyright": "© {{year}} Wiski Photobook"
-  },
-  "language": {
-    "label": "Language",
-    "es": "Spanish",
-    "en": "English"
+    "tagline": "Printed photobooks for all of Ecuador",
+    "legal": "Legal",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "contact": "Contact",
+    "copyright": "© 2026 Wiski Photobook"
   }
 }

@@ -2,3 +2,12 @@ node_modules
 dist
 .DS_Store
 *.local
+*.log
+.env
+.env.*
+!.env.example
+coverage
+*.tsbuildinfo
+
+# PNG originals of the photobook photos. Only the .webp files made by `npm run images` are committed.
+src/assets/photobooks/*.png

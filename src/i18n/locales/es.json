@@ -1,136 +1,108 @@
 {
   "nav": {
-    "links": ["Álbumes", "Ruta", "Momento", "Precios", "Cómo funciona", "Ayuda"],
-    "account": "Cuenta",
-    "cart": "Carrito",
-    "menu": "Menú"
+    "products": "Productos",
+    "howItWorks": "Cómo funciona",
+    "testimonials": "Testimonios",
+    "faq": "FAQ"
+  },
+  "header": {
+    "language": "Idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "cart": "Carrito"
   },
   "hero": {
-    "eyebrow": "Álbumes impresos para todo el Ecuador",
-    "headline": "Una bestia esa foto,\nimprímela",
-    "cta": "Crear mi albúm"
+    "logoAlt": "Wiski Photobook",
+    "headline": "Tus fotos merecen algo más que una galería llena",
+    "cta": "Imprime tu álbum"
+  },
+  "showcase": {
+    "title": "Tus fotos, ya en papel",
+    "pause": "Pausar",
+    "resume": "Reanudar"
+  },
+  "places": {
+    "miami": "Miami",
+    "newYork": "Nueva York",
+    "orlando": "Orlando",
+    "peru": "Perú",
+    "rome": "Roma"
+  },
+  "photos": {
+    "front": "Portada del álbum de {{place}}",
+    "back": "Contraportada del álbum de {{place}}",
+    "open": "Páginas abiertas del álbum de {{place}}",
+    "openView": "Páginas abiertas del álbum de {{place}}, vista {{view}}"
   },
   "products": {
-    "kicker": "Elige tu momento",
+    "title": "Elige tu álbum",
     "subtitle": "Formatos pensados para lo que quieras recordar o regalar",
     "cta": "Empecemos",
-    "ctaAdded": "Añadido ✓",
-    "items": [
-      {
-        "id": "ruta",
-        "title": "Wiski Ruta",
-        "price": "$39",
-        "body": "Tapa dura 21x30 cm — de la maleta al librero.",
-        "badge": "Más vendido"
-      },
-      {
-        "id": "momento",
-        "title": "Wiski Momento",
-        "price": "$29",
-        "body": "Formato mini de bolsillo 15x15 cm.",
-        "badge": "Envíalo como regalo"
-      }
-    ]
+    "ruta": {
+      "badge": "Más vendido",
+      "description": "De la maleta al librero: tus viajes impresos en un álbum de tapa dura.",
+      "format": "Tapa dura · 21x30 cm"
+    },
+    "momento": {
+      "badge": "Para regalar",
+      "description": "Una fecha que importa, en un regalo que no se queda en el celular.",
+      "format": "Formato cuadrado · 20x20 cm"
+    }
   },
-  "advantages": {
-    "heading": "Descubre las ventajas de usar Wiski",
-    "items": [
-      {
-        "title": "Listo en minutos",
-        "body": "Arma tu álbum en menos de 10 minutos con nuestro editor guiado."
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "De tu celular a tu casa en cinco pasos",
+    "steps": {
+      "choose": {
+        "title": "Elige tu álbum",
+        "body": "Escoge el álbum que más se parezca a lo que quieres recordar."
       },
-      {
-        "title": "Envíos a todo el Ecuador",
-        "body": "Tu álbum llega a la puerta de tu casa, esté donde esté."
+      "upload": {
+        "title": "Sube tus fotos",
+        "body": "Selecciona tus fotos y elige el orden en que quieres verlas."
       },
-      {
-        "title": "Papel y acabados de calidad",
-        "body": "Tapa dura, páginas gruesas y colores que no se destiñen."
+      "personalize": {
+        "title": "Personaliza",
+        "body": "Ajusta páginas, portada y contraportada en el editor."
       },
-      {
-        "title": "Edítalo cuando quieras",
-        "body": "Guarda tu proyecto y sigue personalizándolo cuando tengas tiempo."
+      "pay": {
+        "title": "Paga",
+        "body": "Revisa tu pedido y confirma el pago."
+      },
+      "wait": {
+        "title": "Espéralo en casa",
+        "body": "Lo imprimimos y te lo llevamos a cualquier ciudad del Ecuador."
       }
-    ]
+    }
   },
-  "steps": {
-    "items": [
-      {
-        "title": "1. Elige tu plantilla",
-        "body": "Escoge el estilo que más se parezca a tu viaje. Todo se personaliza después en el editor."
-      },
-      {
-        "title": "2. Sube tus fotos",
-        "body": "Las organizamos automáticamente para ti, o arma el orden tú mismo si prefieres el control total."
-      },
-      {
-        "title": "3. Personaliza tu álbum",
-        "body": "Cambia textos, colores y portada hasta que se sienta realmente tuyo."
-      },
-      {
-        "title": "4. Espéralo en casa",
-        "body": "Recíbelo en la puerta de tu casa entre 5 y 10 días hábiles."
-      }
-    ]
-  },
-  "reviews": {
-    "heading": "Lo que dicen quienes ya imprimieron",
-    "items": [
-      {
-        "name": "María José P.",
-        "date": "julio 2026",
-        "title": "Quedó igual a las fotos del viaje",
-        "body": "Pedí el Wiski Ruta para el viaje a Galápagos. La calidad del papel es una locura y llegó en 6 días."
-      },
-      {
-        "name": "Andrés T.",
-        "date": "junio 2026",
-        "title": "El regalo perfecto",
-        "body": "Le hice un Wiski Momento a mi mamá por su cumpleaños. Personalizarlo fue súper fácil."
-      },
-      {
-        "name": "Camila R.",
-        "date": "mayo 2026",
-        "title": "Lo voy a repetir",
-        "body": "El editor organiza las fotos solo, pero igual pude cambiar el orden. Excelente experiencia."
-      }
-    ]
+  "testimonials": {
+    "title": "Lo que dicen quienes ya imprimieron",
+    "rating": "{{rating}} de 5 estrellas",
+    "items": {
+      "camila": "Armé el álbum de nuestro viaje a Perú y ahora vive en la sala.",
+      "andres": "Roma entera en un solo libro. Lo hojeo cada vez que quiero volver.",
+      "daniela": "Armarlo en el editor me tomó menos de diez minutos. Las fotos de Orlando quedaron mejor de lo que esperaba."
+    }
   },
   "faq": {
-    "heading": "Preguntas frecuentes",
-    "items": [
-      {
+    "title": "Preguntas frecuentes",
+    "items": {
+      "order": {
         "question": "¿Cómo hago mi pedido?",
-        "answer": "Elige una plantilla, sube tus fotos y personaliza tu álbum en el editor. Al terminar, confirmas el pedido y el pago en línea."
-      },
-      {
-        "question": "¿Cuánto tarda en llegar mi pedido?",
-        "answer": "Entre 5 y 10 días hábiles a cualquier parte del Ecuador, dependiendo de tu ciudad."
-      },
-      {
-        "question": "¿Qué tanto puedo personalizar mi álbum?",
-        "answer": "Puedes cambiar textos, colores, portada y el orden de las fotos. El editor guarda tus cambios automáticamente."
-      },
-      {
-        "question": "¿Qué tamaños de álbum tienen?",
-        "answer": "Wiski Ruta viene en 21x30 cm y Wiski Momento en formato mini de 15x15 cm."
+        "answer": "Elige tu álbum, sube tus fotos y personalízalo en el editor. Confirma el pago y nosotros lo imprimimos y te lo llevamos hasta tu puerta."
       }
-    ]
+    }
+  },
+  "finalCta": {
+    "headline": "Tus fotos ya están listas. Imprímelas.",
+    "cta": "Imprime tu álbum"
   },
   "footer": {
-    "legal": [
-      "Política de privacidad",
-      "Política de reembolso",
-      "Términos del servicio",
-      "Política de envío",
-      "Información de contacto",
-      "Preferencias de cookies"
-    ],
-    "copyright": "© {{year}} Wiski Photobook"
-  },
-  "language": {
-    "label": "Idioma",
-    "es": "ES",
-    "en": "EN"
+    "tagline": "Álbumes impresos para todo el Ecuador",
+    "legal": "Legal",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "contact": "Contacto",
+    "copyright": "© 2026 Wiski Photobook"
   }
 }

@@ -1,71 +1,82 @@
-# Wiski Photobook — Homepage
+# Wiski Landing
 
-React + Vite marketing homepage for Wiski. Built from the design tokens and
-brand rules in [`ds-wiski/`](ds-wiski/readme.md).
+The landing page of Wiski Photobook. Wiski is an Ecuadorian service. It turns the photos on a phone into a printed photobook.
 
-## Run it
+Read [GLOSSARY.md](GLOSSARY.md) before you write code or copy. It defines the project terms.
+
+## Run
 
 ```bash
-docker compose up --build      # http://localhost:3003
-npm run build    # production build in dist/
+docker compose up --build   # dev server on http://localhost:3003
+npm install && npm run dev  # the same server, without Docker
 ```
 
-## How it's organized
+## Scripts
 
-```
-src/
-  styles/
-    tokens.css       ← colors, fonts, spacing, radii — CHANGE THE SITE HERE
-    breakpoints.js    ← the three shared breakpoint widths
-    global.css        ← resets, base element styles, font import
-  i18n/
-    index.js          ← i18next setup (Spanish default, English included)
-    locales/es.json    ← all Spanish copy
-    locales/en.json    ← all English copy
-  components/
-    Header/, Hero/, ProductShelf/, Advantages/, Steps/,
-    Reviews/, Faq/, Footer/          ← one section = one folder
-    ui/Button.jsx                    ← shared primary/secondary button
-    LanguageSwitcher/                ← <select> that calls i18n.changeLanguage
-  App.jsx                            ← assembles the sections, nothing else
-```
+| Script               | What it does                                               |
+| -------------------- | ---------------------------------------------------------- |
+| `npm run dev`        | Starts the dev server.                                     |
+| `npm run build`      | Makes the production build in `dist/`.                     |
+| `npm run check`      | Runs Biome (lint and format) and the TypeScript check.     |
+| `npm run format`     | Fixes the format and the safe lint errors.                 |
+| `npm run images`     | Makes a WebP next to each PNG in `src/assets/photobooks/`. |
+| `npm test`           | Runs the tests once.                                       |
+| `npm run test:watch` | Runs the tests on each change.                             |
 
-Every component is a plain function component with its own CSS Module
-(`Component.module.css`), so styles never leak between sections and a class
-name collision is impossible. No CSS-in-JS, no styling library, no global
-class-naming convention to remember — just co-located CSS.
+The GitHub Pages workflow runs `check`, `test` and `build` before it deploys.
 
-## Changing the look
+## Stack
 
-Everything visual — colors, font sizes, spacing, corner radii — is a CSS
-variable in [`src/styles/tokens.css`](src/styles/tokens.css). Change a value
-there and it updates everywhere it's used. Component stylesheets never
-hard-code a color or a pixel size that already has a token.
+- React, Vite and TypeScript (`strict`).
+- Tailwind CSS v4 and shadcn/ui. The shadcn components are in `src/components/ui/`. Add one with `npx shadcn@latest add <name>`.
+- Phosphor for icons (`@phosphor-icons/react`).
+- i18next for all text. Spanish is the default language.
+- Biome for lint and format. Vitest and Testing Library for tests.
 
-## Changing the copy / adding a language
+Use the `@/` alias for imports from `src/`.
 
-All page text lives in `src/i18n/locales/*.json`, not in the components. To:
+## Design tokens
 
-- **Edit copy:** change the value in `es.json` (and `en.json` if you keep
-  English in sync). No component code changes.
-- **Add a language:** copy `en.json` to e.g. `fr.json`, translate it, then
-  register it in `src/i18n/index.js` (`resources` and `supportedLngs`) and
-  add it to `LANGUAGES` in `src/components/LanguageSwitcher/LanguageSwitcher.jsx`.
+All colors, fonts and radii are in [src/index.css](src/index.css). There are three layers:
 
-The brand voice is Spanish (Ecuador) — see `ds-wiski/readme.md` for the
-content rules. English is included to demonstrate the i18n setup; drop it if
-the site should ship Spanish-only.
+1. **Primitives.** The `--gray-*` scale. It is a placeholder until the brand colors exist.
+2. **Semantic variables.** The shadcn names. `--primary` and `--secondary` are the two brand roles.
+3. **Tailwind theme.** The `@theme` block maps the semantic variables to utilities.
 
-## Responsive breakpoints
+Components use layers 2 and 3. Never write a color value in a component. To apply the brand colors, change `--primary` and `--secondary`.
 
-Mobile-first. Every component's CSS follows the same two breakpoints:
+Fonts: Bricolage Grotesque for headings, Inter Tight for all other text.
 
-- `640px` — tablet
-- `1024px` — desktop
+## Text and languages
 
-## What's simplified vs. the Figma source
+All text is in `src/i18n/locales/`. A component never contains copy. Spanish is the default. To add a language, add a locale file and register it in `src/i18n/`.
 
-The `ds-wiski/` design system is a pixel-perfect, desktop-only (1440px)
-recreation with no mobile layout and a few flattened bitmap images (the
-advantages panel, steps strip, FAQ accordion) that aren't real, translatable
-markup.
+## Photos
+
+Photobook photos are in `src/assets/photobooks/`. A name has the form `<place>-<part>`, for example `miami-open`. The parts are `front`, `back` and `open`.
+
+## Brand and content
+
+The copy follows these rules.
+
+- **Language.** Spanish of Ecuador, always. The English text exists only for the language switcher.
+- **Person.** Use `tú`: _elige_, _sube_, _personaliza_. Use the possessive when the customer owns the object: _mi álbum_, _tu álbum_. Never use the corporate "we offer".
+- **Case.** Sentence case everywhere. A headline has no final period. A body sentence has one.
+- **Register.** Warm and close. Not cold, not corporate, not luxury. Light local humor is welcome. Do not use slang that the 20-to-60 audience cannot share.
+- **Closing rule.** Every text ends on the physical act: print, paper, the book, the shelf, the door of the house.
+- **Numbers.** Concrete and small. Write sizes with `x`, not `×`: `21x30 cm`.
+- **No emoji.**
+- **The name.** The word _Wiski_ never appears alone in a text. Write _Wiski Photobook_, or put it next to a context that ties it to photobooks. The logo is the exception. _Wiski_ comes from the Ecuadorian word that people say before a photo, as in "cheese". Never explain this and never refer to whisky.
+
+### Product lines
+
+| Line              | What it is                   | Words it owns                            |
+| ----------------- | ---------------------------- | ---------------------------------------- |
+| **Wiski Ruta**    | A travel photobook.          | Trip, route, world, suitcase, bookshelf. |
+| **Wiski Momento** | A gift photobook for a date. | Gift, date, relationship.                |
+
+Never use the words of one line in the other.
+
+### Audience
+
+Adults of 20 to 60 years. They are at ease with technology and have medium to high spending power. They identify strongly with Ecuador.

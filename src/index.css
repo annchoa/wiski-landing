@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/bricolage-grotesque/wght.css";
+@import "@fontsource-variable/inter-tight";
+
+/*
+ * Design tokens, in three layers. Change the look here and nowhere else.
+ *   1. Primitives: the gray scale. Placeholder until the brand colors exist.
+ *   2. Semantic variables: the shadcn names. --primary and --secondary are the
+ *      two brand roles. Point them at brand colors when the brand is ready.
+ *   3. Tailwind theme: the @theme block maps the semantic variables to utilities.
+ * Components read layers 2 and 3 only.
+ */
+:root {
+  --gray-50: #fafafa;
+  --gray-100: #f4f4f5;
+  --gray-200: #e4e4e7;
+  --gray-300: #d4d4d8;
+  --gray-400: #a1a1aa;
+  --gray-500: #71717a;
+  --gray-600: #52525b;
+  --gray-700: #3f3f46;
+  --gray-800: #27272a;
+  --gray-900: #18181b;
+
+  --primary: var(--gray-900);
+  --primary-foreground: var(--gray-50);
+  --secondary: var(--gray-600);
+  --secondary-foreground: var(--gray-50);
+
+  --background: #ffffff;
+  --foreground: var(--gray-900);
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --muted: var(--gray-100);
+  --muted-foreground: var(--gray-600);
+  --accent: var(--gray-100);
+  --accent-foreground: var(--gray-900);
+  --border: var(--gray-200);
+  --input: var(--gray-200);
+  --ring: var(--primary);
+  --destructive: oklch(0.577 0.245 27.325);
+  --on-image: var(--gray-50);
+
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --font-heading: "Bricolage Grotesque Variable", sans-serif;
+  --font-sans: "Inter Tight Variable", sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-on-image: var(--on-image);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+@theme {
+  --animate-marquee: marquee 60s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* Keep "21x30" as written: contextual alternates turn the x into a multiplication sign. */
+    font-feature-settings: "calt" 0;
+  }
+}

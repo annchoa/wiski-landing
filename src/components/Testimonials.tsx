@@ -4,6 +4,7 @@ import { PhotobookPhoto } from "@/components/PhotobookPhoto";
 import { TESTIMONIALS } from "@/content/testimonials";
 
 const RATING = 5;
+const STAR_CLASS = "size-5 text-primary";
 
 export function Testimonials() {
   const { t } = useTranslation();
@@ -38,7 +39,7 @@ export function Testimonials() {
                   {Array.from({ length: RATING }, (_, index) => (
                     // The stars never change and never reorder, so the index is a stable key.
                     // biome-ignore lint/suspicious/noArrayIndexKey: see the comment above.
-                    <StarIcon key={index} aria-hidden weight="fill" className="size-5" />
+                    <StarIcon key={index} aria-hidden weight="fill" className={STAR_CLASS} />
                   ))}
                 </div>
                 <p className="text-base md:text-lg">{t(`testimonials.items.${id}`)}</p>

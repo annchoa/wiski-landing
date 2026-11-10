@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { PHOTOBOOK_EDITOR_URL } from "@/config";
+import { findActiveSection } from "@/lib/active-section";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
@@ -12,14 +13,29 @@ const NAV_LINKS = [
   { key: "faq", href: "#faq" },
 ] as const;
 
+// A section is active when its top is above this line, measured from the viewport top.
+const ACTIVE_SECTION_OFFSET = 120;
+
+function readActiveSection() {
+  const sections = NAV_LINKS.flatMap(({ href }) => {
+    const element = document.querySelector(href);
+    return element ? [{ id: href.slice(1), top: element.getBoundingClientRect().top }] : [];
+  });
+  return findActiveSection(sections, ACTIVE_SECTION_OFFSET);
+}
+
 export function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const MenuIcon = menuOpen ? XIcon : ListIcon;
 
   useEffect(() => {
-    const update = () => setScrolled(window.scrollY > 0);
+    const update = () => {
+      setScrolled(window.scrollY > 0);
+      setActiveSection(readActiveSection());
+    };
     update();
     window.addEventListener("scroll", update, { passive: true });
     return () => window.removeEventListener("scroll", update);
@@ -28,7 +44,7 @@ export function Header() {
   return (
     <header
       data-scrolled={scrolled}
-      className="fixed inset-x-0 top-0 z-50 grid h-16 grid-cols-[1fr_auto_1fr] items-center border-b border-transparent px-6 transition-colors data-[scrolled=true]:border-border data-[scrolled=true]:bg-background md:h-20 md:px-12"
+      className="group/header fixed inset-x-0 top-0 z-50 grid h-16 grid-cols-[1fr_auto_1fr] items-center border-b border-transparent px-6 transition-colors data-[scrolled=true]:border-border data-[scrolled=true]:bg-background md:h-20 md:px-12"
     >
       <button
         type="button"
@@ -43,9 +59,9 @@ export function Header() {
       <nav
         id="main-nav"
         className={cn(
-          "md:col-start-2 md:flex md:flex-row md:gap-10",
+          "md:col-start-2 md:flex md:flex-row md:gap-2",
           menuOpen
-            ? "fixed inset-x-0 top-16 flex flex-col gap-6 bg-background p-6 text-2xl"
+            ? "fixed inset-x-0 top-16 flex flex-col items-start gap-2 bg-background p-6 text-2xl"
             : "hidden",
         )}
       >
@@ -53,8 +69,9 @@ export function Header() {
           <a
             key={key}
             href={href}
+            aria-current={activeSection === href.slice(1) ? "true" : undefined}
             onClick={() => setMenuOpen(false)}
-            className="font-medium md:text-base"
+            className="rounded-full px-4 py-2 font-medium text-foreground transition-all group-data-[scrolled=true]/header:text-primary duration-200 hover:bg-secondary/60 motion-safe:hover:-translate-y-0.5 aria-[current=true]:bg-secondary md:text-base"
           >
             {t(`nav.${key}`)}
           </a>

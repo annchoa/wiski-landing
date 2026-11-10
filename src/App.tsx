@@ -1,3 +1,4 @@
+import { BackToTop } from "@/components/BackToTop";
 import { Faq } from "@/components/Faq";
 import { FinalCta } from "@/components/FinalCta";
 import { Footer } from "@/components/Footer";
@@ -22,6 +23,7 @@ export default function App() {
         <FinalCta />
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

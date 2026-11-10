@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { PhotobookPhoto } from "@/components/PhotobookPhoto";
+import { PhotoCarousel } from "@/components/PhotoCarousel";
 import { Button } from "@/components/ui/button";
 import { PHOTOBOOK_EDITOR_URL } from "@/config";
 import { RUTA_PHOTOS } from "@/content/photobooks";
@@ -10,18 +10,7 @@ const PRODUCT_LINES = [
   { id: "momento", name: "Wiski Momento" },
 ] as const;
 
-function RutaPhotos() {
-  return (
-    <div className="grid grid-cols-2 gap-2">
-      <PhotobookPhoto
-        photo={RUTA_PHOTOS.open}
-        className="col-span-2 aspect-[548/216] w-full object-cover"
-      />
-      <PhotobookPhoto photo={RUTA_PHOTOS.front} className="aspect-[270/152] w-full object-cover" />
-      <PhotobookPhoto photo={RUTA_PHOTOS.back} className="aspect-[270/152] w-full object-cover" />
-    </div>
-  );
-}
+const RUTA_CAROUSEL_PHOTOS = [RUTA_PHOTOS.open, RUTA_PHOTOS.front, RUTA_PHOTOS.back];
 
 export function Products() {
   const { t } = useTranslation();
@@ -50,7 +39,7 @@ export function Products() {
               className="flex flex-col overflow-hidden rounded-lg border bg-card"
             >
               {id === "ruta" ? (
-                <RutaPhotos />
+                <PhotoCarousel photos={RUTA_CAROUSEL_PHOTOS} />
               ) : (
                 // TODO: replace this box with the photos of Wiski Momento.
                 <div aria-hidden className="aspect-[548/376] bg-primary" />

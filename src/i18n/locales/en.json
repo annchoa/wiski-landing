@@ -9,7 +9,8 @@
     "language": "Language",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "cart": "Cart"
+    "cart": "Cart",
+    "backToTop": "Back to top"
   },
   "hero": {
     "logoAlt": "Wiski Photobook",
@@ -37,6 +38,8 @@
   "products": {
     "title": "Choose your photobook",
     "subtitle": "Formats made for what you want to remember or give",
+    "previousPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
     "cta": "Let's start",
     "ruta": {
       "badge": "Best seller",

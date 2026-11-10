@@ -26,7 +26,7 @@ export function HowItWorks() {
             <li key={step} className="flex gap-4 md:flex-col">
               <span
                 aria-hidden
-                className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary font-heading text-xl font-bold text-primary-foreground md:size-12"
+                className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary font-heading text-xl font-bold text-secondary md:size-12"
               >
                 {index + 1}
               </span>

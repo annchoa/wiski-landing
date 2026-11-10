@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import heroBackground from "@/assets/hero-bw.png";
-import logo from "@/assets/logo.png";
+import heroBackground from "@/assets/hero-bw.webp";
+import logo from "@/assets/logo-secondary.png";
 import { Button } from "@/components/ui/button";
 import { PHOTOBOOK_EDITOR_URL } from "@/config";
 
@@ -21,7 +21,7 @@ export function Hero() {
       <div className="flex flex-col items-center gap-8 text-center">
         <h1
           id="hero-title"
-          className="max-w-xl text-balance font-heading text-[32px] leading-[1.1] font-bold text-on-image md:text-[40px]"
+          className="max-w-xl text-balance font-heading text-[32px] leading-[1.1] font-bold text-secondary md:text-[40px]"
         >
           {t("hero.headline")}
         </h1>

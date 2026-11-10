@@ -39,11 +39,11 @@ Use the `@/` alias for imports from `src/`.
 
 All colors, fonts and radii are in [src/index.css](src/index.css). There are three layers:
 
-1. **Primitives.** The `--gray-*` scale. It is a placeholder until the brand colors exist.
+1. **Primitives.** The `--gray-*` scale and the two brand colors, `--brand-primary` and `--brand-secondary`.
 2. **Semantic variables.** The shadcn names. `--primary` and `--secondary` are the two brand roles.
 3. **Tailwind theme.** The `@theme` block maps the semantic variables to utilities.
 
-Components use layers 2 and 3. Never write a color value in a component. To apply the brand colors, change `--primary` and `--secondary`.
+Components use layers 2 and 3. Never write a color value in a component. To change the brand colors, change `--brand-primary` and `--brand-secondary`.
 
 Fonts: Bricolage Grotesque for headings, Inter Tight for all other text.
 

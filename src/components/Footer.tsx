@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-secondary.png";
 import { CONTACT_EMAIL } from "@/config";
 
 // TODO: point these links to the real legal pages.
@@ -12,7 +12,7 @@ export function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-primary px-6 py-12 text-primary-foreground md:py-16">
+    <footer className="bg-primary px-6 py-12 text-secondary md:py-16">
       <div className="mx-auto flex max-w-[1120px] flex-col gap-12">
         <div className="flex flex-col gap-8 md:flex-row md:justify-between md:gap-16">
           <div className="flex flex-col gap-4 md:w-80">
@@ -34,7 +34,7 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <hr className="border-primary-foreground/20" />
+        <hr className="border-secondary/20" />
         <p className="text-sm opacity-70">{t("footer.copyright")}</p>
       </div>
     </footer>

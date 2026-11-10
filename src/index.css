@@ -6,9 +6,9 @@
 
 /*
  * Design tokens, in three layers. Change the look here and nowhere else.
- *   1. Primitives: the gray scale. Placeholder until the brand colors exist.
+ *   1. Primitives: the gray scale and the two brand colors.
  *   2. Semantic variables: the shadcn names. --primary and --secondary are the
- *      two brand roles. Point them at brand colors when the brand is ready.
+ *      two brand roles. They point at the brand colors of layer 1.
  *   3. Tailwind theme: the @theme block maps the semantic variables to utilities.
  * Components read layers 2 and 3 only.
  */
@@ -24,10 +24,13 @@
   --gray-800: #27272a;
   --gray-900: #18181b;
 
-  --primary: var(--gray-900);
+  --brand-primary: #4b8344;
+  --brand-secondary: #eee5de;
+
+  --primary: var(--brand-primary);
   --primary-foreground: var(--gray-50);
-  --secondary: var(--gray-600);
-  --secondary-foreground: var(--gray-50);
+  --secondary: var(--brand-secondary);
+  --secondary-foreground: var(--gray-900);
 
   --background: #ffffff;
   --foreground: var(--gray-900);

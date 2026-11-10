@@ -12,7 +12,7 @@ export function FinalCta() {
     >
       <h2
         id="final-cta-title"
-        className="max-w-3xl text-balance font-heading text-[32px] leading-[1.1] font-bold md:text-5xl"
+        className="max-w-3xl text-balance font-heading text-[32px] leading-[1.1] font-bold text-primary md:text-5xl"
       >
         {t("finalCta.headline")}
       </h2>

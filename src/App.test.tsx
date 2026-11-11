@@ -19,7 +19,7 @@ describe("hero", () => {
     expect(hero.getByRole("img", { name: "Wiski Photobook" })).toBeInTheDocument();
     expect(hero.getByRole("link", { name: "Imprime tu álbum" })).toHaveAttribute(
       "href",
-      "https://annchoa.github.io/wiski-album",
+      "https://annchoa.github.io/wiski-app",
     );
   });
 });
@@ -143,7 +143,7 @@ describe("cart", () => {
 
     expect(screen.getByRole("link", { name: "Carrito" })).toHaveAttribute(
       "href",
-      "https://annchoa.github.io/wiski-album",
+      "https://annchoa.github.io/wiski-app",
     );
   });
 });
@@ -195,7 +195,7 @@ describe("products", () => {
     expect(ruta.getByText("Tapa dura · 21x30 cm")).toBeInTheDocument();
     expect(ruta.getByRole("link", { name: "Empecemos" })).toHaveAttribute(
       "href",
-      "https://annchoa.github.io/wiski-album",
+      "https://annchoa.github.io/wiski-app",
     );
     expect(ruta.getAllByRole("img").map((photo) => photo.getAttribute("alt"))).toEqual([
       "Páginas abiertas del álbum de Miami",
@@ -215,7 +215,7 @@ describe("products", () => {
     expect(momento.getByText("Formato cuadrado · 20x20 cm")).toBeInTheDocument();
     expect(momento.getByRole("link", { name: "Empecemos" })).toHaveAttribute(
       "href",
-      "https://annchoa.github.io/wiski-album",
+      "https://annchoa.github.io/wiski-app",
     );
   });
 });
@@ -293,7 +293,7 @@ describe("final call to action", () => {
 
     expect(within(section).getByRole("link", { name: "Imprime tu álbum" })).toHaveAttribute(
       "href",
-      "https://annchoa.github.io/wiski-album",
+      "https://annchoa.github.io/wiski-app",
     );
   });
 });
